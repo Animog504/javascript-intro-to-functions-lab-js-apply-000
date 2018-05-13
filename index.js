@@ -11,13 +11,17 @@ function logWhisper(){
   return console.log().toLowerCase();
 }
 function sayHiToGrandma(string){
-  var response = "";
-  if (string.toLowerCase() === string)
+  var response = "";//empty response variable
+  
+  if (whisper(string) === string){
     response = "I can't hear you!";
-  if (string.toUpperCase() === string)
-    response = "YEES INDEED!";
-  if (string.toLowerCase() = "i love you, grandma.")
-    response = "I love you, too.";
-  }
+    return response;
+  } // if she can't hear you she can't reply to anything.
+  else if (shout(string) === string){
+    response = "YES INDEED!";
+    if (whisper(string) == "i love you, grandma.")
+      response += "I love you, too."; //additional reply
+  } // if she can hear you she replies YES INDEED, additionall if string is "I love you, Grandma"
+    // it will return "I love you too"
   return response;
 }
