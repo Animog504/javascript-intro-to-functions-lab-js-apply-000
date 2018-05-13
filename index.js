@@ -4,10 +4,10 @@ function shout(string){
 function whisper(string){
   return string.toLowerCase();
 }
-function logShout(){
+function logShout(string){
   return console.log();
 }
-function logWhisper(){
+function logWhisper(string){
   return console.log().toLowerCase();
 }
 function sayHiToGrandma(string){
