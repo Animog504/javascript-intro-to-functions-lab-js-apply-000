@@ -4,11 +4,11 @@ function shout(string){
 function whisper(string){
   return string.toLowerCase();
 }
-function logShout(string){
-  return console.log();
+function logShout(){
+  console.log().toUpperCase();
 }
-function logWhisper(string){
-  return console.log().toLowerCase();
+function logWhisper(){
+  console.log().toLowerCase();
 }
 function sayHiToGrandma(string){
   var response = "";//empty response variable
