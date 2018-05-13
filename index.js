@@ -11,10 +11,13 @@ function logWhisper(){
   return console.log().toLowerCase();
 }
 function sayHiToGrandma(string){
-  if (string.toLowerCase() === string){
-    return "I can't hear you!";
+  var response = "";
+  if (string.toLowerCase() === string)
+    response = "I can't hear you!";
+  if (string.toUpperCase() === string)
+    response = "YEES INDEED!";
+  if (string.toLowerCase() = "i love you, grandma.")
+    response = "I love you, too.";
   }
-  if (string.toUpperCase() === string){
-    return "YES INDEED!";
-  }
+  return response;
 }
