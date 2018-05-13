@@ -15,13 +15,16 @@ function sayHiToGrandma(string){
   
   if (whisper(string) === string){
     response = "I can't hear you!";
-    return response;
   } // if she can't hear you she can't reply to anything.
+  
   else if (shout(string) === string){
     response = "YES INDEED!";
-    if (whisper(string) == "i love you, grandma.")
-      response += "I love you, too."; //additional reply
+  }
+  
+  if (whisper(string) == "i love you, grandma."){
+      response = "I love you, too."; 
   } // if she can hear you she replies YES INDEED, additionall if string is "I love you, Grandma"
     // it will return "I love you too"
+    
   return response;
 }
